@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f5f7fa;
     margin: 20px;
     line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
@@ -8,36 +8,38 @@ body {
 
 header {
     text-align: center;
-    background-color: #2c3e50;
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
     color: white;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 section {
     background-color: white;
     margin-top: 20px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 
 section:hover {
-    transform: scale(1.02);
+    transform: translateY(-5px);
 }
 
 h1 {
     margin: 0;
+    font-size: 2.5em;
 }
 
 h2 {
-    color: #3498db;
+    color: #d6eaf8;
 }
 
 h3 {
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
+    color: #27ae60;
+    border-bottom: 2px solid #27ae60;
     padding-bottom: 5px;
 }
 
@@ -50,53 +52,53 @@ li {
 }
 
 strong {
-    color: #2c3e50;
+    color: #27ae60;
 }
 
 footer {
     text-align: center;
     margin-top: 20px;
     padding: 15px;
-    background-color: #2c3e50;
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
     color: white;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
-/* Кнопка перемикання теми */
 #theme-toggle {
     display: block;
     margin: 20px auto;
-    padding: 12px 20px;
-    background-color: #3498db;
+    padding: 12px 25px;
+    background-color: #e74c3c;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 #theme-toggle:hover {
-    background-color: #2980b9;
+    background-color: #c0392b;
+    transform: scale(1.05);
 }
 
-/* Коментарі */
 .comment {
     border: 1px solid #ddd;
     padding: 15px;
     margin: 15px 0;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #fafafa;
 }
 
 .comment h4 {
     margin-top: 0;
-    color: #3498db;
+    color: #27ae60;
 }
 
 .comment small {
     color: #666;
 }
 
-/* Модальне вікно */
 .modal {
     display: none;
     position: fixed;
@@ -111,7 +113,7 @@ footer {
     max-width: 500px;
     margin: 10% auto;
     padding: 25px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .modal-content label {
@@ -126,6 +128,8 @@ footer {
     padding: 10px;
     margin-top: 5px;
     box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #ccc;
 }
 
 .modal-content button {
@@ -134,9 +138,8 @@ footer {
     cursor: pointer;
 }
 
-/* Денна тема */
 .light-theme {
-    background-color: #f4f4f4;
+    background-color: #f5f7fa;
     color: black;
 }
 
@@ -144,7 +147,6 @@ footer {
     background-color: white;
 }
 
-/* Нічна тема */
 .dark-theme {
     background-color: #1e1e1e;
     color: white;
@@ -157,13 +159,13 @@ footer {
 
 .dark-theme header,
 .dark-theme footer {
-    background-color: #111;
+    background: linear-gradient(135deg, #145a32, #1e8449);
 }
 
 .dark-theme h2,
 .dark-theme h3,
 .dark-theme strong {
-    color: #5dade2;
+    color: #82e0aa;
 }
 
 .dark-theme .comment {
